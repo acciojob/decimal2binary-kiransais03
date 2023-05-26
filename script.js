@@ -1,13 +1,13 @@
-function threeSum(decimal) {
+function threeSum(arr, target) {
   // write your code here
-  console.log(decimal);
+  console.log(arr);
   let midans = "";
-  while (decimal !== 0) {
-    let rem = decimal % 2;
+  while (arr !== 0) {
+    let rem = arr % 2;
 
     let str = rem.toString();
     midans = midans + str;
-    decimal = parseInt(decimal / 2);
+    arr = parseInt(arr / 2);
   }
   let revans = "";
 
@@ -16,6 +16,5 @@ function threeSum(decimal) {
   }
   console.log(revans);
 }
-
 
 module.exports = threeSum;
