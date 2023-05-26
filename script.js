@@ -1,18 +1,21 @@
 function threeSum(decimal) {
-// write your code here
-	let ans="";
-	for(let i=0;decimal>=0;i++)
-		{
-			let rem=decimal%2;
-			midans=midans+${rem};
-		}
-	let revans="";
+  // write your code here
+  console.log(decimal);
+  let midans = "";
+  while (decimal !== 0) {
+    let rem = decimal % 2;
 
-	for(let j=ans.length-1;j>=0;j++)
-		{
-			revans +=ans[j];
-		}
+    let str = rem.toString();
+    midans = midans + str;
+    decimal = parseInt(decimal / 2);
+  }
+  let revans = "";
+
+  for (let j = midans.length - 1; j >= 0; j--) {
+    revans += midans.charAt(j);
+  }
   console.log(revans);
 }
+
 
 module.exports = threeSum;
