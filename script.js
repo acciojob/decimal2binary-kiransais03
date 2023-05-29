@@ -15,6 +15,7 @@ function threeSum(arr, target) {
     revans += midans.charAt(j);
   }
   console.log(revans);
+	return revans;
 }
 
 module.exports = threeSum;
